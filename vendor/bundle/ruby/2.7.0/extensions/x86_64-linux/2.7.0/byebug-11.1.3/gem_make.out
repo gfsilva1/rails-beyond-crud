@@ -1,0 +1,19 @@
+current directory: /home/gfsilva/code/tables/rails-beyond-crud/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+/home/gfsilva/.rvm/rubies/ruby-2.7.3/bin/ruby -I /home/gfsilva/.rvm/rubies/ruby-2.7.3/lib/ruby/2.7.0 -r ./siteconf20220826-3208-8tc31h.rb extconf.rb
+creating Makefile
+
+current directory: /home/gfsilva/code/tables/rails-beyond-crud/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/gfsilva/code/tables/rails-beyond-crud/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/gfsilva/code/tables/rails-beyond-crud/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20220826-3208-bpsgkk/byebug
