@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   end
 
   resources :cadastros
+  resources :projetos do
+    resources :docs
+  end
+
 end

@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_26_225918) do
+ActiveRecord::Schema.define(version: 2022_08_27_151107) do
+
+  create_table "docs", force: :cascade do |t|
+    t.string "nome"
+    t.integer "projeto_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["projeto_id"], name: "index_docs_on_projeto_id"
+  end
+
+  create_table "projetos", force: :cascade do |t|
+    t.string "propriedade"
+    t.string "nome"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "propriedades", force: :cascade do |t|
     t.string "nome"
@@ -26,5 +41,6 @@ ActiveRecord::Schema.define(version: 2022_08_26_225918) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "docs", "projetos"
   add_foreign_key "propriedades", "proprietarios"
 end
