@@ -9,6 +9,7 @@ gem 'rails', '~> 6.1.5', '>= 6.1.5.1'
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem "dotenv-rails", groups: [:development, :test]
+gem "cloudinary"
 
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
