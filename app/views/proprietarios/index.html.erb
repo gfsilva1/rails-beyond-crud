@@ -1,3 +1,9 @@
-<% @proprietarios.each do |p| %>
-  <%=  p.nome %>
-<% end %>
+
+<h2>
+  <div class="card">
+    <% @proprietarios.each do |p| %>
+      <h1>Nome:<%=  link_to p.nome, proprietario_path(p) %></h1>
+    <% end %>
+    <%= link_to "Criar novo", new_proprietario_path %>
+  </div>
+</h2>

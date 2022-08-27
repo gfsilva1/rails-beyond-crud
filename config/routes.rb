@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :proprietarios do
     resources :propriedades
   end
+
+  resources :cadastros
 end
